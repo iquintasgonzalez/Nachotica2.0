@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.50">
+        android:layout_weight="0.30">
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
             android:text="INTENSIDAD"
             android:id="@+id/textView3"
             android:textSize="@dimen/abc_text_size_title_material_toolbar"
-            android:textColor="#fe0707" />
+            android:textColor="#6b3535" />
 
         <SeekBar
             android:layout_width="wrap_content"
@@ -78,6 +78,33 @@
             android:max="@integer/abc_max_action_buttons"
             android:longClickable="true"
             android:foregroundTint="@color/abc_secondary_text_material_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/miValor"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="115dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send"
+            android:onClick="sendMessage" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boton"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="introduce mesaxe"/>
     </LinearLayout>
 
 </LinearLayout>
